@@ -1,4 +1,4 @@
-# ICS20-UnitY-0X-Template
+# ICS20-space-alines
 
 [![GitHub's Super Linter](https://github.com/marco-cuconato/ICS20-space-alines/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/marco-cuconato/ICS20-space-alines/actions)
 
