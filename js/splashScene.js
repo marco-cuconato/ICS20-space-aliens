@@ -1,7 +1,7 @@
  /*global Phaser*/
 
 /**
-* this class is the Title Scene
+* this class is the Slpash Scene
 */
 class SplashScene extends Phaser.Scene {
   /**
