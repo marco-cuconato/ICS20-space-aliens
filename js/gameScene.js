@@ -35,6 +35,7 @@ class GameScene extends Phaser.Scene {
     this.load.image('starBackground', 'assets/starBackground.png')
     this.load.image('ship', 'assets/spaceShip.png')
     this.load.image('missile', 'assets/missile.png')
+    this.load.image('alien', 'assets/alien.png')
     // sound
     this.load.audio('laser', 'assets/laser1.wav')
   }
@@ -47,6 +48,10 @@ class GameScene extends Phaser.Scene {
 
     // create a group for the missiles
     this.missileGroup = this.physics.add.group()
+
+    //create a group for the missiles
+    this.alienGroup = this.physics.add.group()
+    this.createAlien()
   }
 
   update(time, delta) {
