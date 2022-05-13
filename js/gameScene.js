@@ -58,20 +58,20 @@ class GameScene extends Phaser.Scene {
     //create a group for the missiles
     this.alienGroup = this.add.group()
     this.createAlien()
-  
-  // collisions between missiles and aliens
-    this.physics.add.collider(this.missileGroup, this.alienGroup, function (misslesCollide, alienCollide) {
+
+    // Collisions between missiles and aliens
+    this.physics.add.collider(this.missileGroup, this.alienGroup, function (missileCollide, alienCollide) {
       alienCollide.destroy()
       misslesCollide.destroy()
       this.sound.play('explosion')
       this.score = this.score + 1
       this.scoreText.setText('Score: ' + this.score.toString())
       this.createAlien()
-      this.createAlien()
-    }.bind(this)) 
-  }
+      this.createAlien
+    }.baind(this)) 
+}
 
-  update(time, delta) {
+update(time, delta) {
   // called 60 times a second, hopefully 
 
     const keyLeftObj = this.input.keyboard.addKey('LEFT')
